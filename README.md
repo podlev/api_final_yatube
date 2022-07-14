@@ -7,7 +7,7 @@ REST API для проекта Yatube
 # Установка и запуск
 Клонирйте репозиторий
 ```
-git clone https://github.com/podlev/
+git clone https://github.com/podlev/api_final_yatube
 ```
 Установить и активировать виртуальное окружение
 ```
@@ -22,10 +22,15 @@ pip install -r requirements.txt
 ```
 Выполнить миграции:
 ```
+cd yatube_ap
 python manage.py migrate
 ```
 Запустить проект
 ```
 python manage.py runserver
 ```
-Проект доступен по адресу: http://127.0.0.1:8000/
+Проект доступен по адресу: 
+http://127.0.0.1:8000/
+# Документация
+После запуска сервера документация будет доступна по адресу:
+http://127.0.0.1:8000/redoc/
