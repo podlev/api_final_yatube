@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 Выполнить миграции:
 ```
-cd yatube_ap
+cd yatube_api
 python manage.py migrate
 ```
 Запустить проект

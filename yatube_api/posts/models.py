@@ -6,10 +6,10 @@ User = get_user_model()
 
 class Follow(models.Model):
     user = models.ForeignKey(User,
-                             related_name='follower',
+                             related_name='followers',
                              on_delete=models.CASCADE)
     following = models.ForeignKey(User,
-                                  related_name='following',
+                                  related_name='followings',
                                   on_delete=models.CASCADE)
 
     class Meta:
@@ -44,7 +44,7 @@ class Post(models.Model):
                               null=True)
 
     def __str__(self):
-        return self.text
+        return self.text[:30]
 
 
 class Comment(models.Model):
