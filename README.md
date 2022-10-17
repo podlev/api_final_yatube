@@ -1,36 +1,29 @@
 # API_FINAL_YATUBE
-REST API для проекта Yatube
-# Стек технологий
-- фреймворк Django
-- апи Django REST Framework
+### Описание
+**Учебный проект.** REST API для проекта Yatube - социальной сети позволяющей писать посты, добавлять картинки, оставлять комментарии, подписываться на других авторов.
+### Технологии
+- Python 3.7
+- Django 2
 - аутентификация Simple JWT
-# Установка и запуск
-Клонирйте репозиторий
+### Запуск проекта в dev-режиме
+- Установите и активируйте виртуальное окружение
+- Установите зависимости из файла requirements.txt
 ```
-git clone https://github.com/podlev/api_final_yatube
-```
-Установить и активировать виртуальное окружение
-```
-cd api_final_yatube
-python -m venv venv
-Source venv/Scripts/activate
-```
-Установить зависимости
-```
-python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
-Выполнить миграции:
+- Перейдите в папку с manage.py
 ```
 cd yatube_api
+```
+- Выполните миграции
+```
+python manage.py makemigrations
 python manage.py migrate
 ```
-Запустить проект
+Для зауска dev сервера выполните команду:
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
-Проект доступен по адресу: 
-http://127.0.0.1:8000/
-# Документация
+### Документация
 После запуска сервера документация будет доступна по адресу:
 http://127.0.0.1:8000/redoc/
